@@ -22,7 +22,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install uv
-          uv sync
+          uv add flask
+          uv add pytest
 
       - name: Run tests
         run: |
